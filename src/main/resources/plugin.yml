@@ -1,0 +1,21 @@
+name: Flatten
+version: '${version}'
+main: com.dotorimaru.flatten.FlattenPlugin
+api-version: '1.21'
+author: dotorimaru
+description: 플레이어가 지나가는 곳을 지정 Y 기준으로 평탄화 (Y 이상 제거 + Y-1 잔디 채움)
+
+commands:
+  평탄화:
+    description: 지나가는 곳 평탄화 ON/OFF
+    usage: /평탄화 <on|off|y|범위|정보|리로드>
+    aliases: [flatten]
+    permission: flatten.use
+
+permissions:
+  flatten.use:
+    description: 평탄화 사용 권한
+    default: op
+  flatten.admin:
+    description: 평탄화 설정 리로드 권한
+    default: op
